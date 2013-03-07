@@ -1,3 +1,4 @@
+# encoding: UTF-8
 require "simple_growl/version"
 require 'open3'
 
