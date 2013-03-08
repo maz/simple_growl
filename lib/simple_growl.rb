@@ -3,6 +3,13 @@ require "simple_growl/version"
 require 'open3'
 
 module SimpleGrowl
+  # Displays a Growl notification
+  # 
+  # == Parameters:
+  # title::
+  #   The title of the notification to be displayed.
+  # message::
+  #   The message to be displayed with the notification. 
   def notify(title, message)
     #the following applescript code is taken from the sample on the growl website: http://growl.info/downloads
     Open3.popen2("/usr/bin/env osascript") do |stdin, stdout, wait_thr|
